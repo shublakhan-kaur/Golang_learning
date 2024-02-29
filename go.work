@@ -6,4 +6,9 @@ use (
 	./03userInput
 	./04conversion
 	./05mytime
+	./07myPointers
+	./08myarray
+	./09myslices
+	./10mymaps
+	./11mystructs
 )
