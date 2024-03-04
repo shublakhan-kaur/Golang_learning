@@ -66,3 +66,25 @@ func PerformGetRequest() {
 	fmt.Println(byteCount)
 	fmt.Println(responseString.String())
 }
+
+func PerformPostReqForm() {
+	myurl := &url.URL{
+		Scheme: "http",
+		Host:   "localhost:8080",
+		Path:   "learning",
+	}
+
+	data := url.Values{}
+	data.Add("firstName", "Shublakhan")
+	data.Add("lastName", "Kaur")
+	data.Add("email", "kaur.shublakhan@gmail.com")
+	response, err := http.PostForm(myurl.String(), data)
+	if err != nil {
+		panic(err)
+	}
+
+	defer response.Body.Close()
+
+	content, _ := ioutil.ReadAll(response.Body)
+	fmt.Println(string(content))
+}

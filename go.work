@@ -21,4 +21,5 @@ use (
 	./19webrequest
 	./20urls
 	./21webrequestverbs
+	./22bitmorejson
 )
