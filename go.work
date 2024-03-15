@@ -23,4 +23,6 @@ use (
 	./21webrequestverbs
 	./22bitmorejson
 	./23mymodule
+	./24buildapi
+	./25mongoapi
 )
