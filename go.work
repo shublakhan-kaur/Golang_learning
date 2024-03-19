@@ -6,6 +6,7 @@ use (
 	./03userInput
 	./04conversion
 	./05mytime
+	./06mymaths
 	./07myPointers
 	./08myarray
 	./09myslices
@@ -25,4 +26,7 @@ use (
 	./23mymodule
 	./24buildapi
 	./25mongoapi
+	./26goroutines
+	./27mutexAndAwaitGroup
+	./28channels
 )
